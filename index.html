@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Brittany Chiang (Demo)</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[--primary] text-[--textColor]">
+    <header class="container mx-auto p-4 flex justify-between items-center">
+        <div class="text-[--accent] font-bold text-xl">BC</div>
+        <nav class="space-x-4">
+            <a href="#about" class="hover:text-[--accent]">Acerca</a>
+            <a href="#projects" class="hover:text-[--accent]">Proyectos</a>
+            <a href="#contact" class="hover:text-[--accent]">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="hero" class="text-center my-20">
+            <h1 class="text-4xl font-bold">Hola, soy un desarrollador.</h1>
+            <p class="text-[--grayLight] mt-4">Me especializo en crear aplicaciones web.</p>
+            <a href="#projects" class="inline-block mt-8 bg-[--accent] text-[--primary] py-2 px-4 rounded-md hover:bg-teal-400">Ver mis proyectos</a>
+        </section>
+
+        <section id="about" class="my-20">
+            <h2 class="text-3xl font-bold mb-8">Acerca de mí</h2>
+            <p class="text-[--grayLight]">Soy un desarrollador apasionado...</p>
+        </section>
+
+        <section id="projects" class="my-20">
+            <h2 class="text-3xl font-bold mb-8">Mis Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-[--secondary] p-4 rounded-md">Proyecto 1</div>
+                <div class="bg-[--secondary] p-4 rounded-md">Proyecto 2</div>
+                <div class="bg-[--secondary] p-4 rounded-md">Proyecto 3</div>
+            </div>
+        </section>
+
+        <section id="contact" class="my-20">
+            <h2 class="text-3xl font-bold mb-8">Contacto</h2>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Nombre" class="w-full p-2 mb-4 bg-[--secondary] border border-[--grayLight] rounded-md">
+                <input type="email" placeholder="Email" class="w-full p-2 mb-4 bg-[--secondary] border border-[--grayLight] rounded-md">
+                <textarea placeholder="Mensaje" class="w-full p-2 mb-4 bg-[--secondary] border border-[--grayLight] rounded-md"></textarea>
+                <button type="submit" class="bg-[--accent] text-[--primary] py-2 px-4 rounded-md hover:bg-teal-400">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
