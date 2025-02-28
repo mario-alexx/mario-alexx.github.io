@@ -18,8 +18,7 @@ body {
   background-color: var(--primary);
   color: var(--textColor);
 }
-/* Si no quieres usar las variables en Tailwind.config,
-puedes usarlas directamente en clases personalizadas: */
+
 .bg-primary {
 background-color: var(--primary);
 }
@@ -94,7 +93,6 @@ nav a:hover, .social-links a:hover {
 }
 .project-card:hover {
   opacity: 1 !important;
-  /* transform: scale(1.05); */
   filter: brightness(1.2);
 }
 
@@ -110,34 +108,10 @@ nav a:hover, .social-links a:hover {
 }
 
 @media (min-width: 768px) {
-  /* body {
-    display: block;
-  } */
-   .hamburger {
+  .hamburger {
     display: none;
-   }
+  }
   .menu {
     display: block !important;
   }
-    /* .sidebar {
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: var(--secondary);
-      padding: 1rem;
-      text-align: center;
-      z-index: 10;
-    } */
-  /* main {
-    margin-top: 80px;
-    width: 100%;
-    padding: 1rem;
-  }
-  .grid-cols-2 {
-    grid-template-columns: 1fr;
-  }
-  .slider img {
-    width: 40px;
-  } */
 }
