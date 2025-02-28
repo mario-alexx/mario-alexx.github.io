@@ -62,7 +62,6 @@ nav a:hover, .social-links a:hover {
 }
 .slider img {
   width: 40px;
-  /* margin: 0 10px; */
 }
 @keyframes loop-scroll {
   from {transform: translateX(0);}
@@ -83,12 +82,9 @@ nav a:hover, .social-links a:hover {
 
 .project-icons {
   font-size: 1.5rem;
-  /* transition: all 0.3s ease-in-out; */
 }
 .project-icons:hover {
-  /* color: var(--accent); */
   color: white;
-  /* transform: scale(1.2); */
 }
 .project-card {
   transition: all 0.3s ease-in-out;
@@ -98,5 +94,50 @@ nav a:hover, .social-links a:hover {
 }
 .project-card:hover {
   opacity: 1 !important;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+  filter: brightness(1.2);
+}
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+}
+.menu {
+  display: none;
+}
+.menu.active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  /* body {
+    display: block;
+  } */
+   .hamburger {
+    display: none;
+   }
+  .menu {
+    display: block !important;
+  }
+    /* .sidebar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: var(--secondary);
+      padding: 1rem;
+      text-align: center;
+      z-index: 10;
+    } */
+  /* main {
+    margin-top: 80px;
+    width: 100%;
+    padding: 1rem;
+  }
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  .slider img {
+    width: 40px;
+  } */
 }
